@@ -1,0 +1,311 @@
+Index: src/Exercicio1/Mensagem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Mensagem {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Exercicio1/Mensagem.java b/src/Exercicio1/Mensagem.java
+--- a/src/Exercicio1/Mensagem.java	(revision c04c5c67c2ce36d2221c9c4a8e5092e48aa11551)
++++ b/src/Exercicio1/Mensagem.java	(date 1652212379367)
+@@ -1,2 +1,58 @@
++package Exercicio1;
++
+ public class Mensagem {
+-}
++
++    public static void obterMensagem(int hora) {
++
++        switch (hora) {
++            case 5:
++            case 6:
++            case 7:
++            case 8:
++            case 9:
++            case 10:
++            case 11:
++            case 12:
++                mensagemBomDia();
++                break;
++            case 13:
++            case 14:
++            case 15:
++            case 16:
++            case 17:
++                mensagemBoaTarde();
++                break;
++            case 18:
++            case 19:
++            case 20:
++            case 21:
++            case 22:
++            case 23:
++            case 0:
++            case 1:
++            case 2:
++            case 3:
++            case 4:
++                mensagemBoaNoite();
++                break;
++            default:
++                System.out.println("hora invalida.");
++                break;
++
++        }
++    }
++
++    private static void mensagemBoaNoite() {
++        System.out.println("Boa Noite");
++    }
++
++    private static void mensagemBoaTarde() {
++        System.out.println("Bom Tarde");
++    }
++
++    private static void mensagemBomDia() {
++        System.out.println("Bom dia");
++    }
++
++
++}
+\ No newline at end of file
+Index: src/Exercicio1/Calculadora.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n\r\npublic class Calculadora {\r\n    \r\n\r\n    public static void soma(double numero1, double numero2) {\r\n\r\n        double resultado = numero1 + numero2;\r\n\r\n        System.out.println(\"A soma de\" +numero1+ \"mais\" +numero2+ \"é\" + resultado);\r\n    }\r\n\r\n\r\n    public static void subtracao(double numero1, double numero2) {\r\n\r\n        double resultado = numero1 - numero2;\r\n\r\n        System.out.println(\"A subtracao de\" + numero1 + \"menos\" + numero2 + \"é\" + resultado);\r\n    }\r\n\r\n\r\n    public static void multiplicacao(double numero1, double numero2) {\r\n\r\n        double resultado = numero1 * numero2;\r\n\r\n        System.out.println(\"A multiplicacao de\" + numero1 + \"vezes\" + numero2 + \"é\" + resultado);\r\n\r\n    }\r\n\r\n\r\n    public static void divisao(double numero1, double numero2) {\r\n\r\n        double resultado = numero1 / numero2;\r\n\r\n        System.out.println(\"A divisao de\" + numero1 + \"dividido\" + numero2 + \"é\" + resultado);\r\n    }\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Exercicio1/Calculadora.java b/src/Exercicio1/Calculadora.java
+--- a/src/Exercicio1/Calculadora.java	(revision c04c5c67c2ce36d2221c9c4a8e5092e48aa11551)
++++ b/src/Exercicio1/Calculadora.java	(date 1652204808317)
+@@ -1,14 +1,14 @@
+-
++package Exercicio1;
+ 
+ 
+ public class Calculadora {
+-    
++
+ 
+     public static void soma(double numero1, double numero2) {
+ 
+         double resultado = numero1 + numero2;
+ 
+-        System.out.println("A soma de" +numero1+ "mais" +numero2+ "é" + resultado);
++        System.out.println(" A soma de "  +numero1+  " mais "  +numero2+  " é "  + resultado);
+     }
+ 
+ 
+@@ -16,7 +16,7 @@
+ 
+         double resultado = numero1 - numero2;
+ 
+-        System.out.println("A subtracao de" + numero1 + "menos" + numero2 + "é" + resultado);
++        System.out.println(" A subtracao de "  + numero1 +  " menos "  + numero2 +  " é "  + resultado);
+     }
+ 
+ 
+@@ -24,7 +24,7 @@
+ 
+         double resultado = numero1 * numero2;
+ 
+-        System.out.println("A multiplicacao de" + numero1 + "vezes" + numero2 + "é" + resultado);
++        System.out.println(" A multiplicacao de "  + numero1 +  " vezes "  + numero2 +  " é "  + resultado);
+ 
+     }
+ 
+@@ -33,7 +33,7 @@
+ 
+         double resultado = numero1 / numero2;
+ 
+-        System.out.println("A divisao de" + numero1 + "dividido" + numero2 + "é" + resultado);
++        System.out.println(" A divisao de "  + numero1 +  " dividido "  + numero2 +  " é "  + resultado);
+     }
+ 
+ }
+Index: src/Exercicio1/Emprestimo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Emprestimo {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Exercicio1/Emprestimo.java b/src/Exercicio1/Emprestimo.java
+--- a/src/Exercicio1/Emprestimo.java	(revision c04c5c67c2ce36d2221c9c4a8e5092e48aa11551)
++++ b/src/Exercicio1/Emprestimo.java	(date 1652216190488)
+@@ -1,2 +1,39 @@
++package Exercicio1;
++
+ public class Emprestimo {
++
++    public static int getDuasParcelas() {
++        return 2;
++    }
++
++    public static int getTresParcelas() {
++        return 3;
++    }
++
++    public static double getTaxaDuasParcelas() {
++        return 0.3;
++    }
++
++    public static double getTaxaTresParcelas() {
++        return 0.45;
++    }
++
++    public static void calcular (double valor, int parcelas){
++
++        if (parcelas == 2) {
++
++            double valorfinal = valor + (valor * getTaxaDuasParcelas());
++
++            System.out.println(" Valor final de emprestimo para 2 parcelas: R$ "  + valorfinal);
++
++        } else if (parcelas == 3) {
++
++            double valorfinal = valor + (valor * getTaxaTresParcelas());
++
++            System.out.println(" Valor final do emprestimo para 3 parcelas: R$ "  + valorfinal);
++        } else {
++            System.out.println(" Quantidade de parcelas não aceita. ");
++        }
++    }
++
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"087e67eb-86fd-4c44-b9cc-297506ede1d1\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"28ytcKacmJoEUwoHG8v5MK6sjRv\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\n  }\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <created>1652200761102</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1652200761102</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c04c5c67c2ce36d2221c9c4a8e5092e48aa11551)
++++ b/.idea/workspace.xml	(date 1652220584779)
+@@ -1,15 +1,34 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="087e67eb-86fd-4c44-b9cc-297506ede1d1" name="Changes" comment="" />
++    <list default="true" id="087e67eb-86fd-4c44-b9cc-297506ede1d1" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Exercicio1/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercicio1/Calculadora.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Exercicio1/Emprestimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercicio1/Emprestimo.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Exercicio1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercicio1/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Exercicio1/Mensagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercicio1/Mensagem.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
+   <component name="ProjectId" id="28ytcKacmJoEUwoHG8v5MK6sjRv" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -19,12 +38,28 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+   }
+ }]]></component>
++  <component name="RunManager">
++    <configuration name="Exercicio1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Exercicio1.Main" />
++      <module name="untitled" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Exercicio1.Main" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
++      <changelist id="087e67eb-86fd-4c44-b9cc-297506ede1d1" name="Changes" comment="" />
+       <created>1652200761102</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+@@ -32,4 +67,15 @@
+     </task>
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/Exercicio1/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"Exercicio1.Calculadora\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Exercicio1/Main.java b/src/Exercicio1/Main.java
+--- a/src/Exercicio1/Main.java	(revision c04c5c67c2ce36d2221c9c4a8e5092e48aa11551)
++++ b/src/Exercicio1/Main.java	(date 1652214916665)
+@@ -1,5 +1,29 @@
++package Exercicio1;
++
+ public class Main {
++
++
+     public static void main(String[] args) {
+-        System.out.println("Exercicio1.Calculadora");
++
++        //Calculadora
++        System.out.println("Exercicio1 calculadora");
++        Calculadora.soma(3, 5);
++        Calculadora.subtracao(4, 5);
++        Calculadora.divisao(9, 3);
++        Calculadora.multiplicacao(5, 2);
++
++        //Mensagem
++        System.out.println(" Exercicio1 mensagem");
++        Mensagem.obterMensagem(1);
++        Mensagem.obterMensagem(18);
++        Mensagem.obterMensagem(22);
++
++        //Emprestimo
++        System.out.println ("Exercicio1 emprestimo");
++        Emprestimo.calcular(1000, Emprestimo.getDuasParcelas());
++        Emprestimo.calcular(1000, Emprestimo.getTresParcelas());
++Emprestimo.calcular(1000, 5);
++
++
+     }
+ }
+\ No newline at end of file
